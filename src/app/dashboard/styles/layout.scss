@@ -1,0 +1,12 @@
+.layout {
+  display: flex;
+}
+.layout__side-bar {
+  height: 100vh;
+}
+.layout__page {
+  width: 100%;
+  height: 100vh;
+  padding: 50px;
+  overflow: scroll;
+}

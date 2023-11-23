@@ -1,0 +1,57 @@
+@use '@/globalStyles/variables.scss' as *;
+
+.welcome {
+  height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.welcome__header {
+  height: 200px;
+  background-color: $bg-blue-600;
+  border-radius: 10px;
+  display: flex;
+  align-items: flex-end;
+  padding: 20px;
+}
+.welcome__body {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.welcome__text-wrapper {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 10px;
+  background-color: $bg-gray-50;
+  padding: 40px;
+  p {
+    width: 400px;
+    margin: 0px;
+    font-family: $font-lusitana;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  & .welcome__link {
+    width: 100px;
+    border: none;
+    background-color: $bg-blue-600;
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-family: $font-lusitana;
+    font-size: 1.3rem;
+    cursor: pointer;
+    &:hover {
+      background-color: $bg-blue-500;
+    }
+  }
+}
+.hero-image {
+  border-radius: 10px;
+}

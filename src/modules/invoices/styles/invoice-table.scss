@@ -1,0 +1,65 @@
+@use '@/globalStyles/variables' as *;
+
+.container {
+  width: 100%;
+  background-color: $bg-gray-50;
+  border-radius: 10px;
+  padding: 15px;
+}
+.invoice-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.invoice-table__header-row {
+  margin-left: 10px;
+}
+.invoice-table__header-item {
+  padding: 25px 0px 15px 15px;
+  text-align: start;
+  font-family: $font-lusitana;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 25.5px;
+}
+.invoice-table__body {
+  background-color: $white-color;
+}
+.invoice-table__body-row {
+  border-bottom: 1px solid #adb5bd;
+  &:last-of-type {
+    border-bottom: none;
+  }
+  &:first-child > td:first-child {
+    border-top-left-radius: 10px;
+  }
+  &:first-child > td:last-child {
+    border-top-right-radius: 10px;
+  }
+  &:last-child > td:first-child {
+    border-bottom-left-radius: 10px;
+  }
+  &:last-child > td:last-child {
+    border-bottom-right-radius: 10px;
+  }
+}
+.invoice-table__item {
+  padding: 20px;
+  white-space: nowrap;
+  padding-left: 15px;
+  font-family: $font-lusitana;
+  font-size: 0.9rem;
+  line-height: 21.4px;
+}
+.invoice-table__item-customer-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & .customer-avatar {
+    border-radius: 50%;
+  }
+}
+.invoices-table__item-action {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}

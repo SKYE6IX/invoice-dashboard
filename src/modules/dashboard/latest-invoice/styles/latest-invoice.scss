@@ -1,0 +1,61 @@
+@use '@/globalStyles/variables' as *;
+
+.latest-invoice {
+  width: 100%;
+}
+.latest-invoice__title {
+  font-family: $font-lusitana;
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 300;
+}
+.latest-invoice__inner-wrapper {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $bg-gray-50;
+}
+.latest-invoice__body {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: $white-color;
+}
+.latest-invoice__table {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+.latest-invoice__table_underline {
+  border-top: 1px solid #adb5bd;
+}
+
+.latest-invoice__customer {
+  display: flex;
+  gap: 10px;
+}
+.customer-avatar {
+  border-radius: 50%;
+}
+.latest-invoice__customer-info {
+  p {
+    margin: 0px;
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.1px;
+  }
+}
+.latest-invoice__footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & .arrow-icon {
+    width: 15px;
+    height: 15px;
+  }
+  h3 {
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.1px;
+    font-weight: 300;
+  }
+}

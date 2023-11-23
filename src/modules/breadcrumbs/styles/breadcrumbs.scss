@@ -1,0 +1,23 @@
+@use '@/globalStyles/variables' as *;
+
+.breadcrumb {
+  margin-bottom: 20px;
+}
+.breadcrumb__nav-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+.breadcrumb__nav-list-item {
+  color: rgb(107 114 128);
+  font-family: $font-lusitana;
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 300;
+  & .breadcrumb__nav-list-divider {
+    margin-left: 10px;
+  }
+}
+.breadcrumb__nav-list-item_active {
+  color: rgb(17 24 39);
+}

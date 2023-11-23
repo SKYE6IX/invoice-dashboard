@@ -1,0 +1,25 @@
+@use '@/globalStyles/variables' as *;
+
+.search {
+  position: relative;
+}
+.search__label {
+  display: none;
+}
+.search__input {
+  width: 100%;
+  border: 1px solid #4763e4;
+  padding: 16px 16px 16px 40px;
+  border-radius: 10px;
+  font-family: $font-lusitana;
+  font-size: 1.1rem;
+  line-height: 26.1px;
+}
+.search-icon {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}

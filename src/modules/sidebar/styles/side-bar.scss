@@ -1,0 +1,46 @@
+@use '@/globalStyles/variables.scss' as *;
+
+.side-bar {
+  height: 100vh;
+  width: 256px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: #4658ac;
+}
+.side-bar__image-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.25;
+  background:
+    url('../../../../public/blue-image-bg.png'),
+    lightgray 50% / cover no-repeat;
+}
+.side-bar__logo-container {
+  background-color: #0e1b6b;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  z-index: 5;
+}
+.side-bar__inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  z-index: 5;
+  padding: 0px 20px 20px 20px;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    #131c55 0%,
+    rgba(19, 28, 85, 0.35) 104.8%,
+    rgba(19, 28, 85, 0) 169.64%
+  );
+}
+.side-bar__actions {
+  margin-top: auto;
+}

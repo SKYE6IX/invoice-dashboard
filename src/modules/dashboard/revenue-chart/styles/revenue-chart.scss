@@ -1,0 +1,71 @@
+@use '@/globalStyles/variables' as *;
+
+.revenue-chart {
+  width: 100%;
+}
+.revenue-chart__title {
+  font-family: $font-lusitana;
+  font-size: 1.5rem;
+  line-height: 36px;
+  font-weight: 300;
+}
+.revenue-chart__inner-wrapper {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: $bg-gray-50;
+}
+.revenue-chart__body {
+  padding: 30px 15px;
+  border-radius: 10px;
+  display: flex;
+  gap: 15px;
+  background-color: $white-color;
+}
+.revenue-chart__y-axis-label {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  p {
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.1px;
+    font-weight: 300;
+  }
+}
+.revenue-chart__stick-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  p {
+    margin: 0px;
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.1px;
+    transform: rotate(-90deg);
+  }
+}
+.revenue-chart__stick {
+  width: 100%;
+  background-color: $bg-blue-300;
+  border-radius: 5px;
+}
+.revenue-chart__footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  & .calender-icon {
+    width: 15px;
+    height: 15px;
+  }
+  h3 {
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.1px;
+    font-weight: 300;
+  }
+}

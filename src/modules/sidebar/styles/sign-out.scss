@@ -1,0 +1,19 @@
+@use '@/globalStyles/variables' as *;
+
+.sign-out-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 8px;
+  border-radius: 16px;
+  border: none;
+  font-family: $font-lusitana;
+  font-size: 0.9rem;
+  line-height: 21.4px;
+  cursor: pointer;
+}
+
+.sign-out-icon {
+  width: 25px;
+  height: 25px;
+}

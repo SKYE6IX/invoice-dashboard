@@ -1,0 +1,135 @@
+@use '@/globalStyles/variables' as *;
+
+.create {
+  width: 100%;
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.create-form {
+  width: 100%;
+  background-color: $bg-gray-50;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.create-form__row-customer,
+.create-form__row-amount,
+.create-form__row-status {
+  label {
+    font-family: $font-lusitana;
+    font-size: 1rem;
+    line-height: 24px;
+  }
+}
+.create-form__row-select-customer,
+.create-form__row-select-amount {
+  position: relative;
+  select,
+  input {
+    width: 100%;
+    padding: 10px 15px 10px 40px;
+    border: 1px solid #ced4da;
+    border-radius: 10px;
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.4px;
+    outline: none;
+  }
+  & .create-form__icon {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+.create-form__row-status-inner-wrapper {
+  display: flex;
+  gap: 10px;
+  padding: 10px 15px 10px 15px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  background-color: $white-color;
+  & .create-form__row-select-status {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    input {
+      appearance: none;
+      border-radius: 50%;
+      width: 21px;
+      height: 21px;
+      border: 2px solid #999;
+      background-color: rgb(243 244 246);
+      border-color: rgb(209 213 219);
+      transition: 0.2s all linear;
+      &:checked {
+        border: 6px solid rgb(209 213 219);
+      }
+    }
+    label {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      padding: 8px 16px;
+      border-radius: 16px;
+      font-family: $font-lusitana;
+      font-size: 0.9rem;
+      line-height: 21.4px;
+      &[for='paid'] {
+        background-color: rgb(34 197 94);
+        color: $white-color;
+      }
+      &[for='pending'] {
+        background-color: rgb(243 244 246);
+        color: rgb(107 114 128);
+      }
+      & .create-form__icon {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+.create-form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+  & .cancel-button,
+  button {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: none;
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.4px;
+    cursor: pointer;
+  }
+  button {
+    transition: all 0.2s ease-in;
+    background-color: $bg-blue-600;
+    color: $white-color;
+    &:hover {
+      background-color: $bg-blue-500;
+    }
+  }
+  & .cancel-button {
+    background-color: $bg-gray-50;
+  }
+}
+
+.create-form__error {
+  margin-top: 10px;
+  p {
+    font-family: $font-lusitana;
+    font-size: 0.9rem;
+    line-height: 21.4px;
+    color: red;
+  }
+}

@@ -1,0 +1,17 @@
+@use '@/globalStyles/variables.scss' as *;
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__icon {
+  height: 33px;
+  width: 33px;
+  color: white;
+}
+.logo__text {
+  margin: 0px;
+  font-family: $font-lusitana;
+  font-size: 35px;
+  color: white;
+}

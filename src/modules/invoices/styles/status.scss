@@ -1,0 +1,23 @@
+@use '@/globalStyles/variables' as *;
+.status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  font-size: 0.9rem;
+  line-height: 21.4px;
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+.status-paid {
+  background-color: rgb(34 197 94);
+  color: $white-color;
+}
+.status-pending {
+  background-color: rgb(243 244 246);
+  color: rgb(107 114 128);
+}
+.status-icon {
+  width: 16.4px;
+  height: 16.4px;
+}
